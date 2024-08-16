@@ -1,7 +1,11 @@
-CLIENT_ID = "UEPRop71bx_0f26scuYxAA"
-SECRET_KEY = "6ORjxx6JBic2Al7XyDMgvUJjvn3IpA"
-
 import praw
+
+CLIENT_ID = ''
+SECRET_KEY = ''
+
+with open('api.txt', 'r') as f:
+    CLIENT_ID = f.readline().strip()
+    SECRET_KEY = f.readline().strip()
 
 with open('pw.txt', 'r') as f:
     pw = f.read()
